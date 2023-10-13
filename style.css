@@ -141,8 +141,11 @@ body{
   
   .work{
     display:flex;
-    margin-top:2em;
+    margin-top:1em;
+    margin-bottom: 1em;
     flex-flow:column warp;
+    padding-right:1em; 
+    padding-top:1em;
     padding-bottom:1em;
     border-radius: 0.5em;
     filter: grayscale(100%);
@@ -415,9 +418,8 @@ body{
 
     .work{
       width:90%;
-      display:block;
+      display:flex;
       margin-top:1em;
-      padding-bottom:1em;
       border-radius: 0.5em;
       filter: grayscale(100%);
       margin-left:5%;
@@ -433,10 +435,16 @@ body{
       margin-left: 2em;
     }
 
+    .work-pic{
+      object-fit: cover;
+    }
+
     .work-image{
       border-radius: 10px;
-      max-width: 480px;
-      max-height: 270px;
+      margin:0em;
+      object-fit: cover;
+      width: auto;
+      height: auto;
     }
 
     .pic-wall{
