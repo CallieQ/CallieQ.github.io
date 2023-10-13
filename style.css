@@ -348,8 +348,8 @@ body{
 
   @media (max-width: 700px), screen and (orientation: portrait) {
     .work-image{
-      min-width: 80%;
-      max-height: 80%;
+      max-width: 100%;
+      max-height: 100%;
     }
     .side-nav{
       margin-left:0em;
@@ -406,9 +406,10 @@ body{
     main{
       float:left;
       width:100%;
-      margin-right:0em;
+      margin-right:auto;
+      margin-left: auto;
       margin-top:-1em;
-      padding-right:10%;
+      padding-right:0em;
     }
 
     .blank{
@@ -418,13 +419,13 @@ body{
     }
 
     .work{
-      display:flex;
+      display:block;
       margin-top:1em;
-      flex-flow:column nowarp;
       padding-bottom:1em;
       border-radius: 0.5em;
       filter: grayscale(100%);
       margin-left: 2em;
+      margin-right: 2em;
     }
 
     .about{
@@ -434,12 +435,6 @@ body{
 
     .contact{
       margin-left: 2em;
-    }
-
-    .work-image{
-      border-radius: 10px;
-      width: 400px;
-      height: 225px;
     }
 
     .pic-wall{
@@ -464,4 +459,8 @@ body{
       animation-duration: 0.2s;
     }
   
+    .work-words{
+      width:auto;
+      margin-right:1em;
+    }
   }
