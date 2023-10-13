@@ -1,0 +1,467 @@
+body{
+    margin-left:0em;
+  }
+  
+  h1{
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+  }
+  
+  h2{
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size:1.5em;
+    margin-bottom:0em;
+  }
+  
+  ul{
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 1.25em;
+    list-style-type:none;
+    color:#959595;
+    margin-top:0em;
+    margin-bottom:0.5em;
+  }
+
+  p{
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 1.25em;
+  }
+
+  img{
+    border-radius: 10px;
+  }
+  
+  a{
+    text-decoration: none;
+    color:inherit;
+  }
+
+  a:hover{
+    text-decoration: none;
+    color:#E0AE2D;
+  }
+
+  .chosen{
+    color:#E0AE2D;
+  }
+
+  .side-nav{
+    margin-left:0em;
+    margin-top:-1em;
+    padding-top:3em;
+    padding-right: 1em;
+    width:22.5%;
+    height:100%;
+    position:fixed;
+    display: flex;
+    flex-direction:column;
+    align-items:flex-end;
+    text-align: end;
+    line-height:175%;
+    background-color: #FFFFFF;
+    z-index: 2;
+  }
+  
+  .pic-wall{
+    margin-top:3em;
+    display:flex;
+    flex-flow: column wrap;
+    height:800px;
+  }
+  
+  .img{
+    filter: grayscale(100%) blur(2px);
+    margin-right:1em;
+    margin-bottom:1em;
+  }
+  
+  .img:hover{
+    filter: none;
+    animation-name: example;
+    animation-duration: 0.75s;
+  }
+  
+  #pic1{
+    order:0;
+  }
+  
+  #pic2{
+    order:1;
+  }
+  
+  #pic3{
+    order:2;
+  }
+  
+  #pic4{
+    order:3;
+    align-self: baseline;
+  }
+  
+  #pic5{
+    order:4;
+    align-self: flex-start;
+  }
+  
+  #pic6{
+    order:5;
+    align-self: flex-start;
+  }
+  
+  @keyframes example {
+    0%   {filter: grayscale(100%) blur(2px)}
+    50%  {filter: grayscale(30%) blur(1px)}
+    100% {filter: none}
+  }
+
+  main{
+    float:right;
+    width:60%;
+    margin-right:0em;
+    margin-top:-1em;
+    padding-right:15%;
+  }
+  
+  .title{
+    width:120%;
+    position:fixed;
+    background:white;
+    margin-left: -2em;
+    border-left-width: 30em;
+    border-color: #FFFFFF;
+    padding-top:3em;
+    padding-left: 2em;
+    padding-bottom:1em;
+    z-index: 1;
+  }
+  
+  .work{
+    display:flex;
+    margin-top:2em;
+    flex-flow:column warp;
+    padding-bottom:1em;
+    border-radius: 0.5em;
+    filter: grayscale(100%);
+  }
+
+  .about{
+    display:flex;
+    margin-top:2em;
+    flex-flow:column warp;
+    padding-bottom:1em;
+    border-radius: 0.5em;
+  }
+
+  .border-line{
+    width:100%;
+    height:0.1px;
+    background-color:#959595;
+  }
+
+  .work:hover{
+    filter: none;
+    background-color: #F1F1F1;
+    animation-name: works;
+    animation-duration: 0.2s;
+  }
+
+  .blank{
+    margin-top:8em;
+    background-color: #FFFFFF;
+  }
+
+  @keyframes works {
+    0%   {filter: grayscale(100%); background-color:#FFFFFF;}
+    50%  {filter: grayscale(30%)}
+    100% {filter: none; background-color: #F1F1F1;}
+  }
+  
+  .work-words{
+    margin-left:1em;
+    display:flex;
+    flex-flow:column;
+    justify-content:space-between;
+  }
+  
+  .about-words{
+    margin-left:1em;
+    display:flex;
+    flex-flow:column;
+    justify-content:space-between;
+  }
+
+  .up-time{
+    color:#959595;
+  }
+
+  .down-description{
+    color:#959595;
+  }
+  
+  .contact{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-link{
+    margin-left: 2em;
+    color: #959595;
+  }
+
+  .contact-title{
+    color: #000000;
+  }
+
+  @media (max-width: 1130px), screen and (orientation: portrait) {
+    p{
+      font-family: "Inter", sans-serif;
+      font-weight: lighter;
+      font-size: 1em;
+    }
+    
+    .side-nav{
+      margin-left:0em;
+      margin-top:-1em;
+      padding-top:3em;
+      padding-right: 1em;
+      width:20%;
+      height:100%;
+      position:fixed;
+      display: flex;
+      flex-direction:column;
+      align-items:flex-end;
+      text-align: end;
+      line-height:175%;
+      background-color: #FFFFFF;
+      z-index: 2;
+    }
+
+    main{
+      float:right;
+      width:65%;
+      margin-right:-2em;
+      margin-top:-1em;
+      padding-right:15%;
+    }
+
+    .work-words h2{
+      font-size: 1.25em;
+    }
+  }
+
+  @media (max-width: 950px), screen and (orientation: portrait) {
+    .work-image{
+      border-radius: 10px;
+      max-width: 400px;
+      max-height: 300px;
+    }
+    
+    p{
+      font-family: "Inter", sans-serif;
+      font-weight: lighter;
+      font-size: 1em;
+    }
+    
+    .side-nav{
+      margin-left:0em;
+      margin-top:-1em;
+      padding-top:3em;
+      padding-right: 1em;
+      width:20%;
+      height:100%;
+      position:fixed;
+      display: flex;
+      flex-direction:column;
+      align-items:flex-end;
+      text-align: end;
+      line-height:175%;
+      background-color: #FFFFFF;
+      z-index: 2;
+    }
+
+    main{
+      float:right;
+      width:65%;
+      margin-right:-2em;
+      margin-top:-1em;
+      padding-right:15%;
+    }
+
+    .up-description{
+      font-size: 1em;
+    }
+
+    .work-words h2{
+      font-size: 1.25em;
+    }
+
+  }
+
+  @media (max-width: 850px), screen and (orientation: portrait) {
+    .work-image{
+      border-radius: 10px;
+      max-width: 320px;
+      max-height: 280px;
+    }
+    
+    h1{
+      font-family: "Inter", sans-serif;
+      font-weight: normal;
+      font-size: 1.25em;
+    }
+    
+    h2{
+      font-family: "Inter", sans-serif;
+      font-weight: lighter;
+      font-size:1.25em;
+      margin-bottom:0em;
+    }
+    
+    ul{
+      font-family: "Inter", sans-serif;
+      font-weight: lighter;
+      font-size: 1em;
+      list-style-type:none;
+      color:#959595;
+      margin-top:0em;
+      margin-bottom:0.5em;
+    }
+
+    .work-words h2{
+      font-size: 1.25em;
+      margin-top: 0em;
+    }
+
+    .pic-wall{
+      display:flex;
+      flex-flow: column wrap;
+      height:1200px;
+      margin-right: 2em;
+    }
+    
+  
+  }
+
+  @media (max-width: 700px), screen and (orientation: portrait) {
+    .work-image{
+      max-width: 320px;
+      max-height: 180px;
+    }
+    .side-nav{
+      margin-left:0em;
+      margin-top:-1em;
+      padding-top:2em;
+      padding-right:0em;
+      width:100%;
+      position:fixed;
+      display: inline-block;
+      height:120px;
+      text-align: center;
+      line-height:175%;
+      background-color: #FFFFFF;
+      z-index: 2;
+      border-bottom-style: solid;
+      border-bottom-color: #959595;
+      border-width: 0.01px;
+    }
+
+    h1{
+      font-family: "Inter", sans-serif;
+      font-weight: normal;
+      margin:0em;
+    }
+    
+    h2{
+      font-family: "Inter", sans-serif;
+      font-weight: lighter;
+      margin-bottom:0em;
+      margin-top: 0em;
+      margin-left: 0em;
+    }
+    
+    .title{
+      width:100%;
+      position:fixed;
+      background:white;
+      margin-top:110px;
+      z-index: 1;
+      margin-left: 0em;
+    }
+
+    ul{
+      display:flex;
+      justify-content:space-between;
+      list-style-type:none;
+      margin-right: 2em;
+      margin-bottom: 0em;
+      margin-top: 0em;
+      text-align: center;
+      color:#959595;
+    }
+
+    main{
+      float:left;
+      width:100%;
+      margin-right:0em;
+      margin-top:-1em;
+      padding-right:10%;
+    }
+
+    .blank{
+      margin-top:0em;
+      height: 185px;
+      background-color: #FFFFFF;
+    }
+
+    .work{
+      display:flex;
+      margin-top:1em;
+      flex-flow:column nowarp;
+      padding-bottom:1em;
+      border-radius: 0.5em;
+      filter: grayscale(100%);
+      margin-left: 2em;
+    }
+
+    .about{
+      margin-left: 2em;
+      border-radius: 0.5em;
+    }
+
+    .contact{
+      margin-left: 2em;
+    }
+
+    .work-image{
+      border-radius: 10px;
+      width: 400px;
+      height: 225px;
+    }
+
+    .pic-wall{
+      display:flex;
+      flex-flow: column wrap;
+      height:1200px;
+      margin-right: 2em;
+      margin-left: 2em;
+      margin-top: 180px;
+    }
+
+    .img:active{
+      filter: none;
+      animation-name: example;
+      animation-duration: 0.75s;
+    }
+
+    .work:active{
+      filter: none;
+      background-color: #F1F1F1;
+      animation-name: works;
+      animation-duration: 0.2s;
+    }
+  
+  }
