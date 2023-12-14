@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Koulen' rel='stylesheet'>
+    <title>Meditation Breathing</title> 
+</head>
+
+<body>
+    <div class="head-bar">
+        <div class="logo">
+            <p>Medy</p>
+        </div>
+        <div class="about">
+            <p class="about-word"><a href="about.html">Why Meditation</a></p>
+        </div>
+    </div>
+
+    <div class="function-container">
+        <div class="breath-container"> 
+            <div class="breath-animation">
+                <div class="breath-circle" id="breathCircleBig"></div>
+                <p id='breathWord'><p>
+            </div>
+            <button class="breath-circle" id="breathCircle1" onclick="addSecond(1)"></button>
+            <p id="plusSymbol">+</p>
+            <button class="breath-circle" id="breathCircle2" onclick="addSecond(-1)"></button>
+            <p id="minusSymbol">–</p>
+            <p id="infoSymbol">info</p>
+            <div class="breath-circle" id="breathCircle3"></div>
+            <p id="info">Press circle to adjust animation speed:<br/>"+" shorten "hold" & "breathe out",
+                 "-" lengthen "hold" & "breathe out".<br/>Choose color & press "Play noise" to generate white noise, press "Fade noise" to stop noise.</p>
+        </div>
+        <div class="sound-generator">
+            <div class="button-container">
+                <input class="noise-button" id="pickedColor" type="color" value="#3E97B0"></input>
+                <button class="noise-button" onclick="Noise.play(noise)">Play noise</button>
+                <button class="noise-button" onclick="Noise.fade(noise)">Fade noise</button>
+            </div>
+        </div>
+    </div>
+    <div class="background-bottom">
+        <div class="back-shape" id="backShape1"></div>
+    </div>
+    <div class="background-top">
+        <div class="back-shape" id="backShape2"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+  
