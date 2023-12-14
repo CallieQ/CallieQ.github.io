@@ -475,3 +475,22 @@ a:visited{
               linear-gradient(rgba(62,150,176,0.6), rgba(0,0,255,0));
   }
 }
+
+@media (max-width: 480px), screen and (orientation: portrait) {
+  .function-container{
+    margin-left: 0em;
+  }
+
+  #minusSymbol{
+    margin-top:2.5em;
+    margin-left:-1.5em;
+    color:white;
+    font-size: 3em;
+    font-weight: bold;
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+  }
+
+}
+
